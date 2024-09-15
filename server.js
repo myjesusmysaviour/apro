@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 
 // Add cors middleware
 app.use(cors({
-    origin: '*',  // Allow all origins
+    origin: 'http://localhost:8000,https://abiel0.github.io/imgs',  // Allow all origins
     methods: ['POST'],  // Allow only POST method
     allowedHeaders: ['Content-Type', 'Authorization']  // Allow these headers
 }));
